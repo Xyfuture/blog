@@ -1,0 +1,17 @@
+name: DeployGitHubPages
+
+on:
+  push:
+    branches:
+      - main  # Set a branch to deploy
+
+jobs:
+  update:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          repository: xyfuture/xyfuture.github.io
+          event-type: blog_update
