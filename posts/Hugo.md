@@ -1,5 +1,5 @@
 ---
-title: "Hugo体验"
+title: "Hugo尝试"
 date: 2021-05-23T21:55:08+08:00
 draft: false
 ---
