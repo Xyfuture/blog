@@ -13,5 +13,5 @@ jobs:
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.REPO_ACCESS_TOKEN }}
-          repository: xyfuture/xyfuture.github.io
+          repository: xyfuture/hugo_blog_env
           event-type: blog_update
