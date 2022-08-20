@@ -62,3 +62,5 @@ target("main")
 xmake也有一个CLion的插件，但是他比bazel的插件还简陋，甚至不支持补全等功能。但是xmake有一个好处就是能直接生成CMakeLists，CLion根据CMakeLists就能实现补全等功能了。通过cmake的桥，CLion也能很方便对使用xmake构建的项目进行调试等操作。
 
 xmake还带有一个官方的包管理工具，可以很方便的引入第三方库，不过这个工具以lib的方式分发，对本模拟器项目来说不是很合适，因此我也没有过多的了解。
+
+> PS:前几天在windows上自动配置cmake有一个关于路径的小bug，刚提issue作者就给改了，效率特别高，很赞。
